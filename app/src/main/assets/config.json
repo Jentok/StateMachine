@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "commands": [
+    {
+      "commandName": "purchase",
+      "initialState": "AMOUNT_ENTRY",
+      "states": [
+        {
+          "name": "AMOUNT_ENTRY",
+          "function": "enterAmount",
+          "nextState": "CARD_ENTRY",
+          "errorState": "FAILED"
+        },
+        {
+          "name": "CARD_ENTRY",
+          "function": "readCard",
+          "nextState": "AUTHORIZATION",
+          "errorState": "FAILED"
+        },
+        {
+          "name": "AUTHORIZATION",
+          "function": "authorizePayment",
+          "nextState": "COMPLETED",
+          "errorState": "DECLINED"
+        },
+        {
+          "name": "COMPLETED",
+          "function": "complete"
+        },
+        {
+          "name": "DECLINED",
+          "function": "decline"
+        },
+        {
+          "name": "FAILED",
+          "function": "fail"
+        }
+      ]
+    },
+    {
+      "commandName": "refund",
+      "initialState": "AMOUNT_ENTRY",
+      "states": [
+        {
+          "name": "AMOUNT_ENTRY",
+          "function": "enterAmount",
+          "nextState": "CARD_ENTRY",
+          "errorState": "FAILED"
+        },
+        {
+          "name": "CARD_ENTRY",
+          "function": "readCard",
+          "nextState": "AUTHORIZATION",
+          "errorState": "FAILED"
+        },
+        {
+          "name": "AUTHORIZATION",
+          "function": "authorizePayment",
+          "nextState": "COMPLETED",
+          "errorState": "DECLINED"
+        },
+        {
+          "name": "COMPLETED",
+          "function": "complete"
+        },
+        {
+          "name": "DECLINED",
+          "function": "decline"
+        },
+        {
+          "name": "FAILED",
+          "function": "fail"
+        }
+      ]
+    }
+  ]
+}
