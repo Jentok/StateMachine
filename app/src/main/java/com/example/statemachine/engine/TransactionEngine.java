@@ -75,6 +75,21 @@ public class TransactionEngine {
     }
 
     // Mapping of function strings with their respective Activity classes
+    /** Assignment mentions : "You must call functions by their string name, not by directly calling
+     *  them, think of a processor that receives a String "readCard", so it calls the corresponding function.
+     *  That could be done like :
+     *
+     *         try {
+     *             Method method = this.getClass().getDeclaredMethod(functionName);
+     *             method.setAccessible(true);
+     *             method.invoke(this);
+     *         } catch (Exception e) {
+     *             e.printStackTrace();
+     *         }
+     *
+     * Since I have one centralized function to launch the activities I mapped the function names
+     * directly with the activities
+     */
     Class<? extends Activity> getFunctionActivity(String function) {
         Class<? extends Activity> target = null;
 
