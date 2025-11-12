@@ -17,7 +17,7 @@ public class AuthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generic);
 
         TextView title = findViewById(R.id.title);
-        title.setText("Authorization");
+        title.setText(R.string.authorization);
 
         Button ok = findViewById(R.id.button_ok);
         Button fail = findViewById(R.id.button_fail);

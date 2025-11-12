@@ -17,7 +17,7 @@ public class AmountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generic);
 
         TextView title = findViewById(R.id.title);
-        title.setText("Amount entry");
+        title.setText(R.string.amount_entry);
 
         Button ok = findViewById(R.id.button_ok);
         Button fail = findViewById(R.id.button_fail);

@@ -17,7 +17,7 @@ public class CompleteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generic);
 
         TextView title = findViewById(R.id.title);
-        title.setText("Completed");
+        title.setText(R.string.completed);
 
         Button ok = findViewById(R.id.button_ok);
         Button fail = findViewById(R.id.button_fail);

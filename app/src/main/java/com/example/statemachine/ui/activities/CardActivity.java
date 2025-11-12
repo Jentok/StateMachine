@@ -17,7 +17,7 @@ public class CardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generic);
 
         TextView title = findViewById(R.id.title);
-        title.setText("Card entry");
+        title.setText(R.string.card_entry);
 
         Button ok = findViewById(R.id.button_ok);
         Button fail = findViewById(R.id.button_fail);

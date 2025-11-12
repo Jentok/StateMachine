@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">StateMachine</string>
+    <string name="card_entry">Card entry</string>
+    <string name="authorization">Authorization</string>
+    <string name="failed">Failed</string>
+    <string name="amount_entry">Amount entry</string>
+    <string name="declined">Declined</string>
+    <string name="completed">Completed</string>
+    <string name="fail">Fail</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
 </resources>

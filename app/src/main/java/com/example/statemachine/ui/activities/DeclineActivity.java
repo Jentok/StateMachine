@@ -17,7 +17,7 @@ public class DeclineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generic);
 
         TextView title = findViewById(R.id.title);
-        title.setText("Declined");
+        title.setText(R.string.declined);
 
         Button ok = findViewById(R.id.button_ok);
         Button fail = findViewById(R.id.button_fail);

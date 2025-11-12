@@ -44,7 +44,7 @@ public class TransactionEngine {
         goToState(command.getInitialState());
     }
 
-    // Gets the state name and calls the launching function
+    // Gets the state by name and calls the launching function
     private void goToState(String stateName) {
         if (stateName == null) {
             Log.d("Engine", "No next state. aborting");
