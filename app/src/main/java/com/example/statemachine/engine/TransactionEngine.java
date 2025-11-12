@@ -80,7 +80,7 @@ public class TransactionEngine {
      *  That could be done like :
      *
      *         try {
-     *             Method method = this.getClass().getDeclaredMethod(functionName);
+     *             Method method = this.getClass().getDeclaredMethod(state.getFunction());
      *             method.setAccessible(true);
      *             method.invoke(this);
      *         } catch (Exception e) {
@@ -120,7 +120,7 @@ public class TransactionEngine {
     // Abort function used to go back to main menu, used when no next step is defined or when transaction is canceled
     private void abort() {
         Intent intent = new Intent(activity, MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         launcher.launch(intent);
     }
 
