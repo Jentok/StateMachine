@@ -18,10 +18,23 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.activities.AmountActivity" />
+        <activity
+            android:name=".ui.activities.CardActivity" />
+        <activity
+            android:name=".ui.activities.AuthActivity" />
+        <activity
+            android:name=".ui.activities.CompleteActivity" />
+        <activity
+            android:name=".ui.activities.DeclineActivity" />
+        <activity
+            android:name=".ui.activities.FailActivity" />
+
     </application>
 
 </manifest>
